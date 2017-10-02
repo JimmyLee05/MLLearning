@@ -1,3 +1,1 @@
-# SwiftMLProject
-Swift ML Demo 
-机器学习
+# 自己写的一个Swift的机器学习的App，用了苹果最新推出的ML机器学习框架和官网上训练好的模型。
