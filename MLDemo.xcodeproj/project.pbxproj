@@ -12,8 +12,8 @@
 		88D639A91F824D7600F5737D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D639A71F824D7600F5737D /* Main.storyboard */; };
 		88D639AB1F824D7600F5737D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D639AA1F824D7600F5737D /* Assets.xcassets */; };
 		88D639AE1F824D7600F5737D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D639AC1F824D7600F5737D /* LaunchScreen.storyboard */; };
-		88D639B91F824D7600F5737D /* MLDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D639B81F824D7600F5737D /* MLDemoTests.swift */; };
-		88D639C41F824D7600F5737D /* MLDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D639C31F824D7600F5737D /* MLDemoUITests.swift */; };
+		88D639D21F8257D700F5737D /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D639D11F8257CA00F5737D /* Inceptionv3.mlmodel */; };
+		88D639D41F8259EF00F5737D /* UIImageToCVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D639D31F8259EF00F5737D /* UIImageToCVPixelBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,9 @@
 		88D639AD1F824D7600F5737D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88D639AF1F824D7600F5737D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D639B41F824D7600F5737D /* MLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88D639B81F824D7600F5737D /* MLDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLDemoTests.swift; sourceTree = "<group>"; };
-		88D639BA1F824D7600F5737D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D639BF1F824D7600F5737D /* MLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88D639C31F824D7600F5737D /* MLDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLDemoUITests.swift; sourceTree = "<group>"; };
-		88D639C51F824D7600F5737D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D639D11F8257CA00F5737D /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		88D639D31F8259EF00F5737D /* UIImageToCVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageToCVPixelBuffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				88D639A21F824D7600F5737D /* MLDemo */,
-				88D639B71F824D7600F5737D /* MLDemoTests */,
-				88D639C21F824D7600F5737D /* MLDemoUITests */,
 				88D639A11F824D7600F5737D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +93,8 @@
 		88D639A21F824D7600F5737D /* MLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88D639D11F8257CA00F5737D /* Inceptionv3.mlmodel */,
+				88D639D31F8259EF00F5737D /* UIImageToCVPixelBuffer.swift */,
 				88D639A31F824D7600F5737D /* AppDelegate.swift */,
 				88D639A51F824D7600F5737D /* ViewController.swift */,
 				88D639A71F824D7600F5737D /* Main.storyboard */,
@@ -105,24 +103,6 @@
 				88D639AF1F824D7600F5737D /* Info.plist */,
 			);
 			path = MLDemo;
-			sourceTree = "<group>";
-		};
-		88D639B71F824D7600F5737D /* MLDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				88D639B81F824D7600F5737D /* MLDemoTests.swift */,
-				88D639BA1F824D7600F5737D /* Info.plist */,
-			);
-			path = MLDemoTests;
-			sourceTree = "<group>";
-		};
-		88D639C21F824D7600F5737D /* MLDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				88D639C31F824D7600F5737D /* MLDemoUITests.swift */,
-				88D639C51F824D7600F5737D /* Info.plist */,
-			);
-			path = MLDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D639D41F8259EF00F5737D /* UIImageToCVPixelBuffer.swift in Sources */,
 				88D639A61F824D7600F5737D /* ViewController.swift in Sources */,
+				88D639D21F8257D700F5737D /* Inceptionv3.mlmodel in Sources */,
 				88D639A41F824D7600F5737D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D639B91F824D7600F5737D /* MLDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D639C41F824D7600F5737D /* MLDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
